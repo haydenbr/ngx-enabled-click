@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-enabled-click": {
+      "projectType": "library",
+      "root": "projects/ngx-enabled-click",
+      "sourceRoot": "projects/ngx-enabled-click/src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-enabled-click/tsconfig.lib.json",
+            "project": "projects/ngx-enabled-click/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-enabled-click/src/test.ts",
+            "tsConfig": "projects/ngx-enabled-click/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-enabled-click/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-enabled-click/tsconfig.lib.json",
+              "projects/ngx-enabled-click/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "ngx-enabled-click"
+}
