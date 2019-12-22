@@ -1,6 +1,6 @@
 {
   "name": "@nooice/ngx-enabled-click",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "angular",
     "ngx",
@@ -23,7 +23,7 @@
     "pack-lib": "cd dist/ngx-enabled-click && yarn pack",
     "copy-files": "cp README.md dist/ngx-enabled-click && cp LICENSE dist/ngx-enabled-click",
     "package": "yarn build && yarn copy-files && yarn pack-lib",
-    "publish-lib": "",
+    "publish-lib": "yarn ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
