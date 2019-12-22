@@ -1,6 +1,6 @@
 {
   "name": "@nooice/ngx-enabled-click",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "peerDependencies": {
     "@angular/common": ">=4.0.0",
     "@angular/core": ">=4.0.0",
