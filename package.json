@@ -5,7 +5,12 @@
     "angular",
     "ngx",
     "disabled",
-    "click"
+    "enabled",
+    "ngx-click",
+    "ngx-enabled-click",
+    "click",
+    "noice",
+    "nooice"
   ],
   "homepage": "https://github.com/haydenbr/ngx-enabled-click",
   "author": {
@@ -23,7 +28,7 @@
     "pack-lib": "cd dist/ngx-enabled-click && yarn pack",
     "copy-files": "cp README.md dist/ngx-enabled-click && cp LICENSE dist/ngx-enabled-click",
     "package": "yarn build && yarn copy-files && yarn pack-lib",
-    "publish-lib": "yarn ",
+    "publish-lib": "yarn publish dist/ngx-enabled-click/nooice-ngx-enabled-click-*.tgz",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
