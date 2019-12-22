@@ -1,5 +1,9 @@
 # NgxEnabledClick
 
+```bash
+npm install @nooice/ngx-enabled-click
+```
+
 Usage
 
 ```html
