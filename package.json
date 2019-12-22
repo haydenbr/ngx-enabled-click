@@ -1,14 +1,33 @@
 {
   "name": "@nooice/ngx-enabled-click",
   "version": "0.0.1",
+  "keywords": [
+    "angular",
+    "ngx",
+    "disabled",
+    "click"
+  ],
+  "homepage": "https://github.com/haydenbr/ngx-enabled-click",
+  "author": {
+    "name": "Hayden Braxton",
+    "url": "https://twitter.com/hayden_dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haydenbr/ngx-enabled-click.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build ngx-enabled-click",
+    "pack-lib": "cd dist/ngx-enabled-click && yarn pack",
+    "copy-files": "cp README.md dist/ngx-enabled-click && cp LICENSE dist/ngx-enabled-click",
+    "package": "yarn build && yarn copy-files && yarn pack-lib",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "license": "MIT",
   "private": false,
   "dependencies": {
     "@angular/animations": "~8.2.3",
