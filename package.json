@@ -1,6 +1,6 @@
 {
   "name": "@nooice/ngx-enabled-click",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": [
     "angular",
     "ngx",
@@ -25,10 +25,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build ngx-enabled-click",
-    "pack-lib": "cd dist/ngx-enabled-click && yarn pack",
+    "pack-lib": "cd dist/ngx-enabled-click && npm pack",
     "copy-files": "cp README.md dist/ngx-enabled-click && cp LICENSE dist/ngx-enabled-click",
     "package": "yarn build && yarn copy-files && yarn pack-lib",
-    "publish-lib": "yarn publish dist/ngx-enabled-click/nooice-ngx-enabled-click-*.tgz",
+    "publish-lib": "npm publish dist/ngx-enabled-click/nooice-ngx-enabled-click-*.tgz",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
